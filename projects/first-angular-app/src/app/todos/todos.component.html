@@ -1,0 +1,17 @@
+
+<h3> Todos Lists</h3>
+@if (!todoitems().length) {
+    <p> Loading ...</p>
+}
+<ul class="todos">
+@for (todo of todoitems(); track todo.id) {
+    <li class="todos__item">
+        <input type="checkbox" [value]="todo.completed" />
+        <h4> {{todo.title}}</h4>
+    </li>
+}
+
+</ul>
+
+
+<router-outlet/>

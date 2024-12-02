@@ -1,0 +1,15 @@
+
+
+
+<div style="text-align: center;">
+  <h1>
+    Welcome to {{title}}
+  </h1>
+   <nav >
+    <button [routerLink]="['/list']" routerLinkActive="active" class="nav-link"> List</button> 
+    <button [routerLink]="['/details']" routerLinkActive="active"  class="nav-link"> Details</button>
+  </nav>
+  <router-outlet></router-outlet>
+</div>
+
+ 
