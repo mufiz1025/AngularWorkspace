@@ -1,15 +1,22 @@
 
 
-
-<div style="text-align: center;">
+<div class="text-center">
   <h1>
     Welcome to {{title}}
   </h1>
-   <nav >
-    <button [routerLink]="['/list']" routerLinkActive="active" class="nav-link"> List</button> 
-    <button [routerLink]="['/details']" routerLinkActive="active"  class="nav-link"> Details</button>
+  <nav class="d-flex justify-content-center gap-3 mt-4">
+    <button type="submit" class="btn btn-primary" [routerLink]="['/list']" routerLinkActive="active">
+      List
+    </button>
+    <button [routerLink]="['/details']" routerLinkActive="active" class="btn btn-secondary">
+      Details
+    </button>
+    <button [routerLink]="['/forms']" routerLinkActive="active" class="btn btn-success">
+      TDF-Forms
+    </button>
+    <button [routerLink]="['/ReactiveForms']" routerLinkActive="active" class="btn btn-success">
+      CDF-Forms
+    </button>
   </nav>
   <router-outlet></router-outlet>
 </div>
-
- 

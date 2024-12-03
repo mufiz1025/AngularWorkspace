@@ -19,6 +19,18 @@ export const routes: Routes = [
          }
     },
      
+    {   path :'forms' ,
+        pathMatch: 'full',
+        loadComponent :() => {
+            return import('./components/template-form/template-form.component').then((m) => m.TemplateFormComponent)
+         }
+    },
+    {   path :'ReactiveForms' ,
+        pathMatch: 'full',
+        loadComponent :() => {
+            return import('./components/reactive-form/reactive-form.component').then((m) => m.ReactiveFormComponent)
+         }
+    },
     {   path :'**' ,
         pathMatch: 'full',
         loadComponent :() => {
